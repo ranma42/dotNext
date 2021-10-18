@@ -210,7 +210,7 @@ writer.Write<Guid>(Guid.NewGuid());
 // decodes int32, int64 and Guid values from stack-allocated memory
 var reader = new SpanReader<byte>(memory);
 var i32 = reader.ReadInt32(true);
-var i64 = reader.readInt64(true);
+var i64 = reader.ReadInt64(true);
 var g = reader.Read<Guid>();
 ```
 
